@@ -20,7 +20,7 @@ configdump_import_files: "{{ configdump_files }}"
 
 # Add publishers to the CA's in EJBCA. CA's created before the publisher is added to EJBCA and want to leverage the publisher
 # should use this option to add the publisher to the CA.
-add_publshers_to_cas: true
+add_publshers_to_cas: false
 
 # EJBCA version and deployment info
 ejbca_version: 7.4.3.2
@@ -29,8 +29,9 @@ use_local_repository: false
 ejbca_remote_dir: ~/Downloads/PK-Software/ejbca_ee_7_4_3_2.zip
 # EJBCA URL to download the zip release file
 #ejbca_software_url: https://sourceforge.net/projects/ejbca/files/ejbca7/ejbca_ce_7_4_3_2.zip/download
-ejbca_software_url: https://github.com/Keyfactor/ejbca-ce/archive/refs/tags/EJBCA_7_9_0_1_20220525.zip
-ejbca_src_dir_name: ejbca_ce_7_4_3_2
+#ejbca_software_url: https://github.com/Keyfactor/ejbca-ce/archive/refs/tags/EJBCA_7_9_0_1_20220525.zip
+ejbca_software_url: https://github.com/Keyfactor/ejbca-ce/archive/refs/tags/EJBCA_8_0_20230531.zip
+ejbca_src_dir_name: ejbca_ce_8_0_2
 ejbca_type: CA
 
 # EJBCA Upgrade version

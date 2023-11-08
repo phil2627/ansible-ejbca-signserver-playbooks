@@ -116,6 +116,7 @@
         state: link
         src: "{{ ejbca_root_dir }}/{{ ejbca_src_dir_name }}"
         dest: "{{ ejbca_home }}"
+        force: yes
   when: 
     - not ejbca_src_dir.stat.exists or force_ejbca_download is defined and force_ejbca_download|bool
 
