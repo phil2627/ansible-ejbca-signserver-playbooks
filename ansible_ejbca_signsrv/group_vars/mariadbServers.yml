@@ -28,8 +28,9 @@ mariadb_cmd: /usr/bin/mariadb
 mariadb_owner: mysql
 mariadb_group: mysql
 
-mariadb_mirror: yum.mariadb.org
-mariadb_version: '11.3'
+#mariadb_mirror: yum.mariadb.org
+mariadb_mirror:  https://mariadb.org/download/
+mariadb_version: '11.4.1'
 
 mariadb_configure_swappiness: true
 mariadb_swappiness: '10'
